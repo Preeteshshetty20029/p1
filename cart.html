@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Sri Venkataramana Glass & PLywood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><img src="venkat.jpg" align="left" height="100px" width="80px" alt="venkat">Sri Venkataramana Glass & PLywood</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <p>Total: Rs. <span id="cart-total">0.00</span></p>
+                <button id="checkout">Proceed to Checkout</button>
+                <button id="clear-cart">Clear Cart</button>
+
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script src="scripts.js"></script>
+</body>
+</html>

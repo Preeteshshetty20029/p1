@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Sri Venkataramana Glass & Plywood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><img src="venkat.jpg" align="left" height="100px" width="80px" alt="venkat">My Sri Venkataramana Glass & Plywood</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="product1.jpg" alt="Glass">
+                    <h3>Glass (1 sq.ft)</h3>
+                    <p>RS. 10</p>
+                    <div class="item">
+                        <h2>Item Name</h2>
+                        <button id="decrement" onclick="addEventListener(this)">-</button>
+                        <span id="quantity">0</span>
+                        <button id="increment" onclick="addEventListener(this)">+</button>
+                        <button class="add-to-cart" onclick="addToCart(this)" data-product="Plywood">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Plywood">
+                    <h3>Plywood (1 sq.ft)</h3>
+                    <p>Rs. 20</p>
+                    <button class="add-to-cart" onclick="addToCart(this)" data-product="Plywood">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Lamination">
+                    <h3>Laminations (1 roll)</h3>
+                    <p>Rs. 2000</p>
+                    <button class="add-to-cart" onclick="addToCart(this)" data-product="Lamination">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product4.jpg" alt="Beading">
+                    <h3>Beading (1 ft)</h3>
+                    <p>Rs. 20</p>
+                    <button class="add-to-cart" onclick="addToCart(this)" data-product="Beading">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product5.jpg" alt="Fevicol">
+                    <h3>Fevicol (1 kg)</h3>
+                    <p>Rs. 500</p>
+                    <button class="add-to-cart" onclick="addToCart(this)" data-product="Fevicol">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
